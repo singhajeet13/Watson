@@ -33,6 +33,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         myTableView.delegate = self
 //        myTableView.estimatedRowHeight = 44.0
 //        myTableView.rowHeight = UITableViewAutomaticDimension
+        //k.jdfhcildfcuhduilhhhhjMY
         
         
         
