@@ -47,7 +47,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     
     
 
-    @IBAction func sendTo(sender: AnyObject) {
+    @IBAction func sendTo(_ sender: AnyObject) {
         
         let msg : String = self.msgToSend.text
         
@@ -64,13 +64,13 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     
  
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return userTypes.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = self.myTableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) 
+        let cell = self.myTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) 
      
       //cell.message.textAlignment = NSTextAlignment.Right
       cell.textLabel!.text = userTypes[indexPath.row].message
